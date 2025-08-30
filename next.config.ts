@@ -1,7 +1,28 @@
-import type { NextConfig } from "next";
+// import type { NextConfig } from "next";
+// import { hostname } from "os";
 
-const nextConfig: NextConfig = {
-  /* config options here */
+// const nextConfig: NextConfig = {
+  
+
+
+//   }
+// };
+
+
+// @ts-check
+/**
+ * @type {import('next').NextConfig}
+ */
+const nextConfig = {
+  images: {
+    dangerouslyAllowSVG:true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '*',
+      }
+    ]
+  }
 };
 
-export default nextConfig;
+module.exports = nextConfig;
