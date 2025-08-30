@@ -1,7 +1,12 @@
 import Image from "next/image";
-import Navbar from "../components/Navbar";
+import Navbar from "../../components/Navbar";
+import SearchForm from "../../components/SearchForm";
 
-export default function Home() {
+export default async function Home({searchParams}:{
+  searchParams: Promise<{query: string}>})
+
+{  
+  const query = (await searchParams).query;
   return (
     <>
       <section className="pink_container">
@@ -13,7 +18,7 @@ export default function Home() {
           Submit Ideas, Vote on Pitches, and Get Notified in 
           virtual competitions.
         </p>
-        
+        <SearchForm query={query} />
       </section>
     </>
   );
