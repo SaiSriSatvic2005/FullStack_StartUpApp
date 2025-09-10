@@ -1,6 +1,8 @@
 // import type { NextConfig } from "next";
 // import { hostname } from "os";
 
+import build from "next/dist/build";
+
 // const nextConfig: NextConfig = {
   
 
@@ -22,7 +24,15 @@ const nextConfig = {
         hostname: '*',
       }
     ]
-  }
+  },
+  expertimental:{
+    ppr:'incremental'
+  },
+  devIndicators:{
+    appIsrStatus: true,
+    buildActivity: true,
+    buildActivityPosition: 'bottom-right',
+  },
 };
 
 module.exports = nextConfig;
