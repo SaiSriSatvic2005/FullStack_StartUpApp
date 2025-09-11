@@ -26,7 +26,8 @@ const nextConfig = {
     ]
   },
   expertimental:{
-    ppr:'incremental'
+    ppr:'incremental',
+    after:true,
   },
   devIndicators:{
     appIsrStatus: true,

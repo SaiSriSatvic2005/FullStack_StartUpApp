@@ -29,3 +29,8 @@ defineQuery(`*[_id == $id || slug.current == $id][0]{
   category,
   image
 }`);
+
+export const STARTUP_VIEWS_QUERY = defineQuery(`*[_type=="startup" && _id == $id][0]{
+    _id,views
+  }`
+);
