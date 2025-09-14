@@ -14,7 +14,8 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result or
+You open the live page which is deployed by versel [`StartUp-App`](https://quasar-ed.vercel.app/)
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
